@@ -1,0 +1,31 @@
+{
+  "settings": {
+    "import/resolver" : {
+      "node" : {
+        "extensions" : [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "plugins": ["@typescript-eslint/eslint-plugin", "prettier", "jest"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "eslint-config-prettier",
+    "eslint-config-prettier/@typescript-eslint",
+    "airbnb",
+    "airbnb/hooks"
+  ],
+  "rules": {
+    "strict": ["error", "never"],
+    "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "semi": 0,
+    "no-use-before-define": 0,
+    "@typescript-eslint/no-use-before-define": 1,
+    "import/extensions": 0
+  },
+  "env": {
+    "browser": true,
+    "jest/globals": true
+  }
+}
