@@ -14,7 +14,9 @@
     "eslint-config-prettier",
     "eslint-config-prettier/@typescript-eslint",
     "airbnb",
-    "airbnb/hooks"
+    "airbnb/hooks",
+    "prettier/react",
+    "prettier"
   ],
   "rules": {
     "strict": ["error", "never"],
@@ -22,7 +24,11 @@
     "semi": 0,
     "no-use-before-define": 0,
     "@typescript-eslint/no-use-before-define": 1,
-    "import/extensions": 0
+    "import/extensions": 0,
+    "arrow-body-style": 0,
+    "no-unused-vars": 0,
+    "react/require-default-props": 0,
+    "react/prop-types": [0]
   },
   "env": {
     "browser": true,

@@ -1,30 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Route, Switch, useLocation } from 'react-router-dom'
+import Sidebar from './components/Sidebar'
+import './App.css'
+import Dashboard from './components/views/Dashboard'
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 function App() {
+  const location = useLocation()
+  const [route, setRoute] = React.useState(location.pathname)
+
+  function handleChange(newValue: string) {
+    setRoute(newValue)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.tsx</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Sidebar view={route} setView={handleChange}>
+      <Switch>
+        <Route path="/" component={Dashboard} exact />
+      </Switch>
+    </Sidebar>
+  )
 }
 
-export default App;
+export default App
