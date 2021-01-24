@@ -1,19 +1,18 @@
 import * as React from 'react'
 import firebase from 'firebase/app'
 import 'firebase/auth'
-import env from './env'
+import endpoint from './endpoint.config'
 
 const firebaseConfig = {
-  apiKey: env.APIKEY,
-  authDomain: env.AUTHDOMAIN,
-  databaseURL: env.DATABASEURL,
-  projectId: env.PROJECTID,
-  storageBucket: env.STORAGEBUCKET,
-  messagingSenderId: env.MESSAGINGSENDERID,
-  appId: env.APPID,
-  measurementId: env.MEASUREMENTID,
+  apiKey: endpoint.apiKey,
+  authDomain: endpoint.authDomain,
+  databaseURL: endpoint.databaseUrl,
+  projectId: endpoint.projectId,
+  storageBucket: endpoint.storageBucket,
+  messagingSenderId: endpoint.messagingSenderId,
+  appId: endpoint.appId,
+  measurementId: endpoint.measurementId,
 }
-console.log(env.APIKEY)
 
 firebase.initializeApp(firebaseConfig)
 
@@ -40,13 +39,14 @@ export const useAuth: () => {
   user: firebase.User
 } = () => {
   const [state, setState] = React.useState(() => {
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     const user = firebase.auth().currentUser!
     return {
       initializing: !user,
       user,
     }
   })
-
+  /* eslint-disable @typescript-eslint/no-explicit-any */
   function onChange(user: any) {
     setState({ initializing: false, user })
   }

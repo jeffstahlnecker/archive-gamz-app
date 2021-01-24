@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from 'react-query'
+import * as dotenv from 'dotenv'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 
 const queryClient = new QueryClient()
+dotenv.config({ path: '../.env' })
 
 ReactDOM.render(
   <React.StrictMode>

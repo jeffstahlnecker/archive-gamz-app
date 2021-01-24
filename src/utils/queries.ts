@@ -1,28 +1,23 @@
 import { useQuery } from 'react-query'
-import { load } from 'ts-dotenv'
-
-const env = load({
-  SERVER_URL: String,
-})
+import endpoint from './endpoint.config'
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export function useGetUser(email: string) {
   return useQuery(`user-${email}`, async () => {
-    const response = await fetch(`${env.SERVER_URL}/api/users/${email}`, {
+    const response = await fetch(`${endpoint.databaseUrl}/api/users/${email}`, {
       method: 'GET',
     })
-    const getData = await response.json()
-    return getData
+
+    return response.json()
   })
 }
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export function useGet(key: string, querySlug: string) {
   return useQuery(key, async () => {
-    const response = await fetch(`${env.SERVER_URL}${querySlug}`, {
+    const response = await fetch(`${endpoint.serverUrl}/${querySlug}`, {
       method: 'GET',
     })
-    const getData = await response.json()
-    return getData
+    return response.json()
   })
 }
