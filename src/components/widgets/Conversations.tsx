@@ -16,7 +16,7 @@ const Conversations: React.FC = () => {
         <ul className="divide-y divide-gray-200">
           {ConversationsList.map((conversation) => {
             return (
-              <li>
+              <li key={conversation.subject}>
                 <a href="/" className="block hover:bg-gray-50">
                   <div className="px-4 py-4 flex items-center sm:px-6">
                     <div className="min-w-0 flex-1 sm:flex sm:items-center sm:justify-between">
@@ -36,7 +36,7 @@ const Conversations: React.FC = () => {
                           <div>{priorities[conversation.priority]}</div>
                           <div>
                             {conversation.tags.map((tag) => (
-                              <Tag tag={tag} />
+                              <Tag key={tag} tag={tag} />
                             ))}
                           </div>
                         </div>

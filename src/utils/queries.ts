@@ -1,18 +1,28 @@
+import { useQuery } from 'react-query'
+import { load } from 'ts-dotenv'
+
+const env = load({
+  SERVER_URL: String,
+})
+
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-export const getUser = () => {
-  fetch('http://localhost:8080/api/users/jnh2dm@gmail.com', {
-    method: 'GET',
-    mode: 'no-cors',
-    cache: 'no-cache',
-    credentials: 'same-origin',
-    headers: { 'Content-Type': 'application/json' },
+export function useGetUser(email: string) {
+  return useQuery(`user-${email}`, async () => {
+    const response = await fetch(`${env.SERVER_URL}/api/users/${email}`, {
+      method: 'GET',
+    })
+    const getData = await response.json()
+    return getData
   })
-    .then((res) => {
-      return res.json()
-    })
-    .catch((res) => {
-      console.log('Exception : ', res)
-    })
 }
 
-export const dolphone = 'hello'
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+export function useGet(key: string, querySlug: string) {
+  return useQuery(key, async () => {
+    const response = await fetch(`${env.SERVER_URL}${querySlug}`, {
+      method: 'GET',
+    })
+    const getData = await response.json()
+    return getData
+  })
+}

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ad37708f-f8a8-4fa5-b062-4e3991cda5fb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Gamz.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/env.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NotRegistered.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NotRegistered.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UserInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UserInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/widgets/Conversations.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/widgets/Conversations.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mock/ConversationsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/mock/ConversationsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/firebase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/firebase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/queries.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/queries.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1leiGa5yhpGvcexeFqFP6j9dD3p" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad37708f-f8a8-4fa5-b062-4e3991cda5fb" name="Default Changelist" comment="" />
+      <created>1607963869541</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607963869541</updated>
+      <workItem from="1607963878825" duration="1354000" />
+      <workItem from="1607980806849" duration="760000" />
+      <workItem from="1608023811506" duration="701000" />
+      <workItem from="1608029663856" duration="6804000" />
+      <workItem from="1608048520988" duration="15819000" />
+      <workItem from="1608206217048" duration="343000" />
+      <workItem from="1608299389233" duration="1661000" />
+      <workItem from="1608366129889" duration="1606000" />
+      <workItem from="1609863014602" duration="342000" />
+    </task>
+    <task id="LOCAL-00001" summary="Updated to match recent project">
+      <created>1607980860298</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607980860298</updated>
+    </task>
+    <task id="LOCAL-00002" summary="mock api">
+      <created>1607981263778</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607981263778</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add auth and query">
+      <created>1608070606047</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608070606047</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated to match recent project" />
+    <MESSAGE value="mock api" />
+    <MESSAGE value="add auth and query" />
+    <option name="LAST_COMMIT_MESSAGE" value="add auth and query" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
